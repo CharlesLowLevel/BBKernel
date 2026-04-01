@@ -52,6 +52,11 @@ March{
     :Forgot voltage divider at home, but I have both boards, I just need to receive on the UNO at this time, a wire will do just fine for now
     :I'm reading BeagleBone documentation
   }
+  
+  -Extra:
+  My journal is currently in a horrible format, I need to convert this document with
+  the proper markdown syntax. For that, I made a branch for the conversion in case it 
+  goes wrong
 
   ((((ADD PICTURES))))
 
