@@ -29,9 +29,39 @@ March{
     3: Test the BeagleBone to make sure it's alive (First, on Linux. Then, bare-metal blink maybe?)
   }
 
+  Tuesday March 31st:
+
+  ---Done---
+  -Goal 1: Make sure I have all the required tools {
+    :Don't have a usb-to-serial adapter
+    :Made a usb-to-serial using an arduino Uno R3 board without the 328p, wires and a voltage divider, because BB only takes 3.3, not 5V like the UNO.
+    :Tested TTY device connected to itself in my terminal, it's working
+      screen /dev/serial/by-id/usb-Arduino__www.arduino.cc__0043_85133313935351213251-if00
+      RX and TX LEDS are lighting up when typing
+  }
+
+  ---Done---
+  -Goal 2: Initialize and organize the Github Repository (Done) {
+    :I encountered no issues here
+    :Added the first .c file called "kernel", gotta start somewhere
+  }
+
+  ---In Progress---
+  -Goal 3: Test the BeagleBone to make sure it's alive {
+    :BeagleBone is not booting, blue light flash when connected and when button press, but otherwise nothing else
+    :Forgot voltage divider at home, but I have both boards, I just need to receive on the UNO at this time, a wire will do just fine for now
+    :I'm reading BeagleBone documentation
+  }
+
+  ((((ADD PICTURES))))
+
+}
+
+April{
+
   Week 2 {
     This week, I need to get a bare-metal sign of life 
     1: Find documentation on: specifics of BB (Processor, Architecture, memory map, voltage, ttl, etc), Kernels (How do they startup, what services they offer, how do processes start) 
-    2: Implement further structure on repository for these steps ()
+    2: Implement further structure on repository for these steps (Adding extra folders, programs, etc)
   }
 }
