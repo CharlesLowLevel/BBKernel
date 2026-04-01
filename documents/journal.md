@@ -2,7 +2,7 @@
 
 This personal project is about creating a small kernel for the BeagleBone black.
 I am doing this to learn how kernels work, and what goes into creating one, to
-then use that knowledge to help maintain another (Linux).
+then use that knowledge to help maintain another kernel (Linux).
 
 **Goal**: make a kernel load a helloworld C program and run it, outputs
 can be anything (TTY, SSH, HDMI, anything), all on a BeagleBone.
@@ -13,7 +13,7 @@ The journal will follow **this structure:**
 
 ## Month
 
-### Week
+### Week n : name
 
   Thoughts for the week, general comment.
 
@@ -21,36 +21,39 @@ The journal will follow **this structure:**
 
   2. Extras
 
-(**Day**)
+(*Day*)
 
-- [x] Goal being worked on
+- [ ] Goal being worked on
 
 - What was done to make progress for that goal
 
+> Weeks increment on Tuesdays
+> Weekly goals are separated into day-sized tasks
+
 ---
 
->As I don't know how to document this project yet, ~~write in markdown~~, or how
-> to make a kernel, this document, along with many others, ==will
->likely change more than once.== This comment will probably go as well.
->This was written on the first day: March 31st 2026
+As I don't know how to document this project yet, ~~write in markdown~~, or how
+to make a kernel, this document, along with many others, ==will
+likely change more than once.== This comment will probably go as well.
+This was written on the first day: March 31st 2026
 
 ---
 
 ## March
 
-### Week 1
+### Week 1 : The Start (First 3 days)
 
     This week, I'm just trying to make sure everything is in working order
 
-  1. Make sure I have all required tools (Cables, Boards, IDE, Compilers, Comp
-  uters, Adapters, etc)
+  1. Make sure I have all required tools (Cables, Boards, IDE, Compilers,
+  Computers, Adapters, etc)
 
   2. Initialize and organize the Github Repository
 
-  3. Test the BeagleBone to make sure it's alive (First, on Linux. Then, bare-meta
-  l blink maybe?)
+  3. Test the BeagleBone to make sure it's alive (First, on Linux. Then,
+  bare-metal blink maybe?)
 
-(**Tuesday March 31st**)
+(*Tuesday March 31st*)
 
 - [x] Goal 1: Make sure I have all the required tools
 
@@ -72,7 +75,7 @@ The journal will follow **this structure:**
 
 - Added the first .c file called "kernel", gotta start somewhere
 
-- [] Goal 3: Test the BeagleBone to make sure it's alive
+- [ ] Goal 3: Test the BeagleBone to make sure it's alive
 
 - BeagleBone is not booting, blue light flash when connected and when button
 press, but otherwise nothing else
@@ -84,7 +87,7 @@ receive on the UNO at this time, a wire will do just fine for now
 
 ## April
 
-### Week 1-ish
+### Week 1 : The Start (Continuation)
 
     This week, I need to get a bare-metal sign of life
 
@@ -95,7 +98,11 @@ receive on the UNO at this time, a wire will do just fine for now
   2. Implement further structure on repository for these steps (Adding extra f
   olders, programs, etc)
 
-(Wednesday April 1st)
+  3. Test the BeagleBone and make sure it's alive
+
+(*Wednesday April 1st*)
+
+- [ ] (**Goal 3**): Test the BeagleBone and make sure it's alive
 
 ## May
 
