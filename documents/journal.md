@@ -89,13 +89,14 @@ gets pressed, but otherwise nothing else.
     This week, I need to get a bare-metal sign of life
 
   1. Find documentation on: specifics of BB (Processor, Architecture, memory
-  map, voltage, ttl, etc), Kernels (How do they startup, what services they
-  offer, how do processes start)
+  map, voltage, ttl, etc)
 
   2. Implement further structure on repository for these steps (Adding extra f
   olders, programs, etc)
 
   3. Test the BeagleBone and make sure it's alive
+
+  4. +Find useful chapters, paragraphs and details in the documentation
 
 ---
 
@@ -118,7 +119,7 @@ owner might've changed some settings. I'll try flashing the board again
 - I'm dumb. I updated my packages yesterday without realizing it also updated the
 kernel, meaning modules weren't all working. I restarted and now it works over usb
 
-- [ ] Goal 4: *Find documentation on BeagleBone
+- [ ] Goal 1: *Find documentation on BeagleBone*
 
 - Fetched documentation for: BeagleBone Black, TI Sitara AM335,
 ARM-Cortex A8, ARMv7-A ISA
@@ -135,6 +136,24 @@ or is this part of the kernel that's loaded on there. Apparently there's no TTL
 communication by default, so it's likely communicating via some kind of kernel
 usb driver, which requires a kernel. I'll need to make sure my arduino solution
 works before I try programming something
+
+---
+
+(Thursday April 2nd)
+
+---
+
+- [x] Goal 1: *Find Documentation on BeagleBone*
+
+- I think I have everything I need when it comes to the BeagleBone, I'll
+probably be spending the next few days scouting the useful information in these
+texts
+
+- [ ] Goal 2: Implement further structure
+
+- Apparently, it would be useful if I learned how linkers work, since I'll have
+to create header files to include in my kernel.c file to add all the other
+kernel modules
 
 ---
 
