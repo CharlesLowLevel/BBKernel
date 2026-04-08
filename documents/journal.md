@@ -149,11 +149,50 @@ works before I try programming something
 probably be spending the next few days scouting the useful information in these
 texts
 
-- [ ] Goal 2: Implement further structure
+- [x] Goal 2: Implement further structure
 
-- Apparently, it would be useful if I learned how linkers work, since I'll have
-to create header files to include in my kernel.c file to add all the other
-kernel modules
+- Added new c files for the kernel, along with different folders
+
+---
+
+### Week 2
+
+    This week, I'm reading a ton of documentation, making sure I understand the
+    processor and it's boot process
+
+    1. Read AM335 Documentation: Chapter 3, 8, 9, 10, 26
+
+    2. Find information on Uboot
+
+    3. Learn how linkers work
+
+---
+
+(Tuesday April 7th)
+
+---
+
+- [] Goal 1: Read AM335 Documentation
+
+- So far read Chapter 3, 9, 10. Today I'm reading Chapter 8, talking about
+PRCM. I've been reading everyday for the last week or so. I wasted a bit of
+time trying to find information in the datasheet, then I learned what TRMs 
+were. I saw them before, I guess it didn't click in my head that there's also
+one for the BeagleBone's SoC. 
+
+- The BeagleBone is using a System On a Chip, which essentially means if you
+were to just give it power and make it's output pins accessible, you'd have
+a fully funcionning system. This is essentially what the beaglebone does, but
+to make programming easier and allow for bigger projects, the BeagleBone gives
+it's owners 4Gb of system memory, and I believe 512mb of DDR3L RAM. Pretty nice.
+
+- There's a ton of crazy cool stuff in the TRM. New terms I learned and concepts like 
+Interconnects, Network On Chip, Wakeup Domains, Boot ROM, Power Sequencing, PMIC, 
+RTC-Only power modes, Power and Clock Domains, AXI, AMBA, OCP-IP 3.0, and a bunch of 
+other stuff. It's all very interesting, but let's focus on the goal before I become a 
+random-terms expert.
+
+---
 
 ---
 
