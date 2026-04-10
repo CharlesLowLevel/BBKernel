@@ -1,5 +1,8 @@
+#ggdb adds debug info for GDB
+#Wall enables all warnings, extra enables the rest (is all not all?)
 CFLAGS=-ggdb -Wall -Wextra
 
+#Make sure the no-parameter build default is kernel file
 all: kernel
 
 #Main Kernel Code
