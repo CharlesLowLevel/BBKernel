@@ -194,6 +194,43 @@ random-terms expert.
 
 ---
 
+(Sunday April 12th)
+
+- Massive progress has been done this week, even if little to no 
+comments have been added here. I think there just wasn't much to
+talk about, since I spent most of that time reading. I've been 
+reading a bunch of different documentation, from the AM335x TRM
+to small snippets of U-Boot documentation, C documentation, etc. 
+
+- I created a Makefile, added folders and a new hierarchy for the
+kernel files, along with READMEs. I did a few tests, learned a 
+bit about the different compiling stages.
+
+- Here's what's to come: I focused on the boot process. My first
+test will be a simple LED blink or UART hello with no kernel. 
+For that, I need to understand the boot process (which I think
+I've done for the most part), get a bootloader on it and make 
+the bootloader load my code. 
+
+- Here's for future reference, and also to explain what I will be
+doing: ROM code initializes certain peripherals depending on
+SYSBOOT pins (which tell it the peripheral in which the image is
+stored) and looks for an image/binary file with a header in that
+peripheral. That header contains the program size along with the 
+desired loading address target (where you want it). I need to get
+a secondary program loader in that space. That secondary program
+loader is too big for the OCM, so it's split. The part that's in
+OCM will have just enough to initialize peripherals and load the
+rest of itself into DRAM. Once in DRAM, it will move the next 
+instruction pointer to the start of the rest of itself, so it can
+load the program I give it into memory and start that program. 
+Now, this is a whole chain of "setup, start, setup, start", but
+we're not done yet. C programs rely on kernel-given environment
+"things". But, this is the kernel. So, we need to create that 
+environment for the C program. Stuff like Stack, heap, and the 
+memory sections C programs come to expect. That's what I know I
+need to do so far. UART and others will come after. 
+
 ---
 
 ## May
