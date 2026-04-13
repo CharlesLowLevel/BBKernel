@@ -233,6 +233,17 @@ need to do so far. UART and others will come after.
 
 ---
 
+(Monday April 13th)
+
+- I'm trying to figure out how the code will work together. I 
+need to create an assembly file to initialize the C runtime 
+before my kernel file even comes in. Then, I need to get the
+linker to add that assembly file to the start before the linker
+file. Finally, I need to figure out how to make the Make utility
+properly do that every time I use the Make command
+
+---
+
 ## May
 
 ---

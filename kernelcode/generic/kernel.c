@@ -1,14 +1,8 @@
-#include <stdio.h>
+
+// Include the different external .c files
 #include "UART.h"
 
-int main(){
-  int x, y;
-
-  x = 1;
-  y = 2;
-
-  int z = x + y;
-  printf("x+y = %i", z);
-
+int main() {
+  //
   return 0;
 }
