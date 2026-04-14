@@ -242,6 +242,17 @@ linker to add that assembly file to the start before the linker
 file. Finally, I need to figure out how to make the Make utility
 properly do that every time I use the Make command
 
+- I need to read about the ISO C standard, specifically the 
+"Freestanding" section, that explains the runtime. Then, I need
+to understand more about the ABI, which will help me understand
+how to implement the C standard for the ARM processor. Then, I 
+need to read on how to give the assembler special instructions
+for sections of the C code. Finally, I need to read about linkers
+which will help me tell GCC to add the assembly file at the top
+of the kernel code after compilation, so the initialization code
+can start first. This is the hardest part for me so far. We're
+diving into the black box again.
+
 ---
 
 ## May
