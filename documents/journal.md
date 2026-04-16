@@ -255,6 +255,37 @@ diving into the black box again.
 
 ---
 
+(Wednesday April 15th)
+
+- I'm abandoning U-Boot. It's sad, but it has to go. U-Boot has
+very little documentation that applies to my use case. Even 
+though it technically support the specific processor I'm using. 
+It focuses on the "Secure Device", which is another state that 
+my processor can be in, but isn't, since it's not reversible, 
+and technically unsafe for me if I don't want to accidentally 
+lose my board by losing a key or something. Everything so far 
+was darkness but with a flashlight. U-Boot is a 10000 lumen 
+flashlight, but the devs lost the batteries. I might try again
+later if I have a better understanding. But I have to let U-boot
+go if I want to get this kernel done by the time my name is on a 
+grave. I'm not an avid fan of forums or tutorials, which seem to
+be the only way people aren't hating on U-boot for their docs. 
+So far, I haven't touched a single tutorial or forum. Tools need
+to provide their own facts, as I don't want to touch the wrong 
+setting and spend weeks debugging something that isn't user error.
+But again, I'm guessing they somehow expect me to know everything
+that goes on during boot, but if I did, I wouldn't be using a 
+pre-made bootloader for a diy kernel.
+
+- I'm looking into Barebox, which seems to be developped with 
+C, and a very "linux-like" approach to building, configuring and
+programming. Making it easier to debug on my own. The documentation
+already looks more straightforward. I'll see if I can get that 
+running. I just need an SPL that gets DRAM going, says stuff over
+UART, and most importantly, doesn't require me to spend weeks 
+saying no to 100 configuration options that have nothing to do with
+my board. So, Barebox, I put my faith in you.
+
 ## May
 
 ---
