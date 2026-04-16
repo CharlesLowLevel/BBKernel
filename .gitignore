@@ -1,2 +1,3 @@
 kernel.dSYM
 kernel
+*.DS_Store

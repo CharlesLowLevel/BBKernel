@@ -255,6 +255,19 @@ diving into the black box again.
 
 ---
 
+### Week 3: Getting Barebox
+
+    This week, after reading AM335 Documentation, I need to get
+    a bootloader to load the kernel into main memory.
+
+    1. Read Barebox documentation
+
+    2. Compile Barebox as SPL and Bootloader(in main memory)
+
+    3. Test that it works
+    
+---
+
 (Wednesday April 15th)
 
 - I'm abandoning U-Boot. It's sad, but it has to go. U-Boot has
@@ -285,6 +298,26 @@ running. I just need an SPL that gets DRAM going, says stuff over
 UART, and most importantly, doesn't require me to spend weeks 
 saying no to 100 configuration options that have nothing to do with
 my board. So, Barebox, I put my faith in you.
+
+- [ ] Goal 1: 
+
+---
+
+### Week 3.5 : Set up C runtime, start UART driver programming
+
+    I need to get a Hello World message over UART. This is the
+    second major milestone after Barebox loading the program.
+
+    1. Set up stack and necessary registers for C runtime in ASM
+
+    2. Add this file to the main kernel using the linker
+
+    3. Read on how UART works
+
+    4. Start implementing a UART driver for the kernel via a separate
+    .c file
+
+---
 
 ## May
 

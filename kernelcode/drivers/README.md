@@ -1,5 +1,1 @@
-# drivers
-
-## This is code for non-core peripherals
-
-### For things like PMIC, USB, UART, etc
+This is where "classes" of drivers are.
