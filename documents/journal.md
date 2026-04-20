@@ -299,7 +299,37 @@ UART, and most importantly, doesn't require me to spend weeks
 saying no to 100 configuration options that have nothing to do with
 my board. So, Barebox, I put my faith in you.
 
-- [ ] Goal 1: 
+- [ ] Goal 1: Compile Barebox as SPL and Bootloader
+  This part really isn't that hard, at least thanks to Barebox.
+  I was able to quickly read the documentation, the menuconfig 
+  is very easy to go through. I disabled most things that either
+  weren't specific to my board, or that I didn't think I needed. 
+  Barebox, like U-boot, is focused on Linux. So they have features
+  that aren't necessary when simply trying to load bare-metal C
+  programs. However, a lot of these features will be added later,
+  since they are quality of life for most kernels. 
+
+  I have run into a problem though: size too big. I realized I was
+  trying to get the shell working in the MLO, which is limited by
+  the OCM size. I guess I didn't think about that at first. But I 
+  removed support, at least in the MLO, and now it's compiling fine.
+
+  I also learned today that there's a minimum terminal display size
+  for menuconfig, kinda funny. 
+
+  MLO is compiled, not yet tested. Full barebox uses a config called
+  OMAP_defconfig for Ti's OMAP descendents (which the am335x is). It's
+  more general and doesn't have every specific driver, but it doesn't
+  have to since MLO did most of the ground work. I can now enable the
+  shell here.
+
+  MLO and barebox.bin have been compiled with the proper settings. 
+  The board-specific documentation seems behind on the changes that
+  have been made with barebox. So, even though I named the files like
+  that, maybe I wasn't supposed to. But for the first attempt, I'll
+  keep it like the older documentation says. Let's format the sd card, 
+  and load both bootloader files properly. 
+
 
 ---
 
