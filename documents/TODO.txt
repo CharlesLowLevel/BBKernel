@@ -1,0 +1,9 @@
+
+
+Have an option for the final binary name as a global variable
+
+Set up Kbuild/Kconfig for the build process
+
+Create assembly file for C runtime. Supposedly, there's only
+a need to set up the stack and zero out memory. -nostartfile
+should strip out the C runtime that it makes by default.
